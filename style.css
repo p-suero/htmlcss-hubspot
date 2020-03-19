@@ -82,7 +82,6 @@ header {
 .btn {
     border: 1px solid #ff7a59;
     color: #ff7a59;
-    padding: ;
     font-size: 1rem;
     font-weight: 500;
     background-color: white;
@@ -139,7 +138,7 @@ header {
     padding: 0 18px;
     list-style-type: none;
     font-size: 17px;
-    font-weight: 560;
+    font-weight: 500;
 }
 
 #menu-container a {
