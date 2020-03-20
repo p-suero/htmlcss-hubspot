@@ -5,7 +5,7 @@
 }
 
 header {
-    font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Arial";
 }
 
 #header-top {
@@ -33,7 +33,7 @@ header {
 #header-top-left {
     width: 30%;
     float: left;
-
+    line-height: 90px;
 }
 
 #header-top-right {
@@ -44,30 +44,23 @@ header {
 
 #header-top-left li {
     display: inline-block;
-    height: 90px;
-    line-height: 90px;
-}
-
-#header-top-left li:first-child a {
-    border-right: 2px solid #cbd6e2;
+    line-height: 30px;
+    height: 30px;
     padding-right: 15px;
 }
 
+#header-top-left li:first-child {
+    border-right: 2px solid #cbd6e2;
+}
+
 #header-top-left li:nth-child(2) {
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 #header-top-left li a {
     text-decoration: none;
     color: #33475b;
     font-weight: 500;
-    line-height: 30px;
-    display: inline-block;
-    height: 30px;
-}
-
-#header-top-left li:first-child span {
-    padding-right: 8px;
 }
 
 .angle-down-icon {
@@ -81,8 +74,8 @@ header {
     margin-right: 30px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 90px;
     display: inline-block;
+    line-height: 90px;
 }
 
 .btn {
@@ -92,7 +85,7 @@ header {
     font-weight: 300;
     background-color: white;
     padding: 0.9em 20px 0.6em;
-    border-radius: 3px;
+    border-radius: 5px;
     display: inline-block;
 }
 
@@ -143,19 +136,20 @@ header {
     line-height: 90px;
     padding: 0 18px;
     list-style-type: none;
-    font-size: 18px;
-    font-weight: 500;
 }
 
 #menu-container a {
     text-decoration: none;
     color: #39475B;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 #jumbotron {
     background-image: url(img/jumbo-background.png);
     background-size: cover;
     background-position: center;
+    font-family: sans-serif;
 }
 
 .jumbo-contain {
@@ -168,7 +162,7 @@ header {
 .jumbo-contain h1 {
     font-weight: 700;
     font-size: 2.60em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
 }
 
 .jumbo-contain p:nth-child(2) {
@@ -177,20 +171,18 @@ header {
     padding-top: 1.3em;
     padding-bottom: 30px;
     line-height: 1.6111111111111112em;
-    font-family: 'News Cycle', sans-serif;
 }
 
 .jumbo-contain a {
     text-decoration: none;
     padding: 2em;
-    font-family: 'News Cycle', sans-serif;
 }
 
 .jumbo-contain p:nth-child(4) {
     font-weight: 200;
     font-size: 0.9rem;
     padding-top: 30px;
-    font-family: 'News Cycle', sans-serif;
+    line-height: 22px;
 }
 
 #features {
@@ -220,7 +212,6 @@ header {
     font-size: 1rem;
     font-weight: 100;
 }
-
 
 #features-top-right {
     width: 65%;
@@ -305,7 +296,7 @@ header {
     color: #33475b;
 }
 
-.lyst-style {
+.list-style {
     font-size: 1.2em;
     color: #ff7a59;
     padding-right: 5px;
@@ -322,6 +313,7 @@ header {
     margin-top: 50px;
     padding-bottom: 50px;
 }
+
 #features-bottom-left {
     width: 30%;
     float: left;
