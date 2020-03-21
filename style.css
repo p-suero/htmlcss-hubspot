@@ -60,6 +60,7 @@ body {
 #header-top-left li a {
     text-decoration: none;
     font-weight: 500;
+    color: inherit;
 }
 
 .angle-down-icon {
@@ -493,7 +494,7 @@ body {
 }
 
 #content {
-    padding: 100px 0 ;
+    padding: 70px 0 120px 0;
 }
 #content-text-part {
     float: left;
@@ -529,4 +530,110 @@ body {
 
 #content-image-part img {
     width: 60%;
+}
+
+#chat-button-contain {
+    background-color: rgb(66, 91, 118);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+#chat-button img {
+    padding: 15px 0;
+}
+
+footer {
+    background-color: #33475b;
+    padding: 5.75rem 0;
+    color: #cbd6e2;
+}
+
+#first-footer-list {
+    width: 25%;
+    float: left;
+    font-size: 0.950rem;
+    font-weight: 700;
+    line-height: 2.8em;
+    padding: 0 1rem 0 0;
+}
+
+#second-footer-list {
+    width: 25%;
+    float: left;
+    font-size: 0.950rem;
+    font-weight: 700;
+    line-height: 2.8em;
+    padding: 0 1rem 0 0;
+}
+
+#third-footer-list {
+    width: 25%;
+    float: left;
+    font-size: 0.950rem;
+    font-weight: 700;
+    line-height: 2.8em;
+    padding: 0 1rem 0 0;
+}
+
+#fourth-footer-list {
+    width: 25%;
+    float: left;
+    font-size: 0.950rem;
+    font-weight: 700;
+    line-height: 2.8em;
+    padding: 0 1rem 0 0;
+}
+
+#footer-list h3 {
+    color: white;
+    font-size: 1.2em;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#fourth-footer-list ul:nth-of-type(1) > li:nth-child(5) a {
+    color: white;
+    font-weight: 100;
+}
+
+#fourth-footer-list li:nth-child(5) span i {
+    color: white;
+}
+
+li #footer-special-button {
+    background-color: white;
+    color: #33475B;
+    width: 100%;
+    padding: 0px 3px;
+    border-radius: 5px;
+    width: 75%;
+    display: inline-block;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 100;
+}
+
+footer #logo-icon li {
+    display: inline-block;
+}
+
+#logo-icon li {
+    padding: 20px 15px 0 0;
+}
+#logo-icon i {
+    font-size: 22px;;
 }
