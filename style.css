@@ -550,7 +550,7 @@ body {
 
 footer {
     background-color: #33475b;
-    padding: 5.75rem 0;
+    padding: 90px 0 60px 0;
     color: #cbd6e2;
 }
 
@@ -604,7 +604,7 @@ footer li a {
     color: inherit;
 }
 
-#fourth-footer-list ul:nth-of-type(1) > li:nth-child(5) a {
+#fourth-footer-list > ul:nth-of-type(1) > li:nth-child(5) a {
     color: white;
     font-weight: 100;
 }
@@ -613,7 +613,7 @@ footer li a {
     color: white;
 }
 
-li #footer-special-button {
+li .footer-special-button {
     background-color: white;
     color: #33475B;
     width: 100%;
@@ -629,11 +629,48 @@ li #footer-special-button {
 
 footer #logo-icon li {
     display: inline-block;
+    padding: 20px 20px 0 0;
 }
 
-#logo-icon li {
-    padding: 20px 15px 0 0;
-}
 #logo-icon i {
-    font-size: 22px;;
+    font-size: 20px;
+}
+
+#footer-languages {
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 2px solid #7c98b6;
+    margin-bottom: 30px;
+}
+
+#footer-languages ul {
+    display: inline-block;
+}
+
+#footer-languages li {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+}
+
+#footer-bottom-left {
+    float: left;
+    width: 50%;
+}
+
+#footer-bottom-left p{
+    font-size: 0.9em;
+    padding-top: 15px;
+}
+
+#footer-bottom-right {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+#footer-bottom-right li {
+    display: inline-block;
+    font-weight: 700;
+    padding: 15px 20px 0 20px;
 }
