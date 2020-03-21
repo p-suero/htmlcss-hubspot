@@ -6,6 +6,7 @@
 
 body {
     font-family: "Arial";
+    color: #33475B;
 }
 
 #header-top {
@@ -37,7 +38,7 @@ body {
 
 #header-top-right {
     width: 70%;
-    float: left;
+    float: right;
     text-align: right;
 }
 
@@ -151,28 +152,27 @@ body {
     background-image: url(img/jumbo-background.png);
     background-size: cover;
     background-position: center;
-    font-family: sans-serif;
 }
 
 .jumbo-contain {
-    width: 43%;
-    color: #33475B;
+    width: 35%;
     padding-top: 80px;
     padding-bottom: 260px;
+    color:#33475B
 }
 
 .jumbo-contain h1 {
     font-weight: 700;
-    font-size: 2.60em;
-    font-family: 'Open Sans';
+    font-size: 2.5em;
 }
 
 .jumbo-contain p:nth-child(2) {
-    font-size: 1.1em;
-    font-weight: 300;
+    font-size: 1em;
+    font-weight: lighter;
     padding-top: 1.3em;
     padding-bottom: 30px;
-    line-height: 1.6111111111111112em;
+    line-height: 1.83em;
+    opacity: 0.9;
 }
 
 .jumbo-contain a {
@@ -204,16 +204,15 @@ body {
 #features-top-left h2 {
     font-weight: 700;
     font-size: 1.777rem;
-    font-family: 'Open Sans', sans-serif;
     line-height: 1.3125em;
 }
 
 #features-top-left p {
-    font-family: 'News Cycle', sans-serif;
     line-height: 2em;
     padding-top: 20px;
     font-size: 1rem;
     font-weight: 100;
+    opacity: 0.9;
 }
 
 #features-top-right {
@@ -225,7 +224,6 @@ body {
 .box {
     padding: 2rem;
     border-radius: 3px;
-    font-family: 'News Cycle', sans-serif;
     background-color: white;
     height: 100%;
     width: 100%;
@@ -253,7 +251,7 @@ body {
     font-weight: 600;
     display: inline-block;
     vertical-align: middle;
-    font-family: 'News Cycle', sans-serif
+    color: #46596B;
 }
 
 .box-description {
@@ -272,10 +270,9 @@ body {
 .popular-features {
     text-transform: uppercase;
     padding-top: 15px;
-    color: #33475b;
+    color: #3D5063;
     font-weight: bolder;
     font-size: 13px;
-    opacity: 0.9;
 }
 
 #features-top-right .popular-features::after {
@@ -438,4 +435,68 @@ body {
 .grid-text p {
     font-size: 1.1em;
     font-weight: 500;
+}
+
+#customers {
+    padding: 100px 0 100px 0;
+    color: #33475B;
+}
+
+#customers-text-part {
+    float: left;
+    width: 30%;
+}
+
+#customers-grid-part {
+    float: right;
+    width: 55%;
+}
+
+#customers-text-part h2 {
+    font-size: 3.0em;
+    line-height: 1.31em;
+    font-family: "open sans";
+}
+
+#customers-text-part p {
+    font-size: 1.4em;
+    padding: 10px 0 18px 0;
+    line-height: 1.6em;
+    font-weight: lighter;
+    opacity: 0.9;
+}
+
+#customers-text-part p strong {
+    font-weight: 600;
+}
+
+.customers-first-grid-unit {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.customers-second-grid-unit {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.customers-third-grid-unit {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.customers-fourth-grid-unit {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+#customers-grid-part img {
+    width: 100%;
+    object-fit: contain;
+    height: 45.64px;
+    line-height: 45.64px;
 }
