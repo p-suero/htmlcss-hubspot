@@ -59,7 +59,6 @@ body {
 
 #header-top-left li a {
     text-decoration: none;
-    color: #33475b;
     font-weight: 500;
 }
 
@@ -158,7 +157,6 @@ body {
     width: 35%;
     padding-top: 80px;
     padding-bottom: 260px;
-    color:#33475B
 }
 
 .jumbo-contain h1 {
@@ -190,10 +188,6 @@ body {
 #features {
     background-color: #F5F8FA;
     padding: 100px 0 100px 0;
-}
-
-#features-top {
-    color: #33475B;
 }
 
 #features-top-left {
@@ -295,7 +289,6 @@ body {
     padding-top: 20px;
     font-size: 14px;
     font-weight: 500;
-    color: #33475b;
 }
 
 .list-style {
@@ -439,7 +432,6 @@ body {
 
 #customers {
     padding: 100px 0 100px 0;
-    color: #33475B;
 }
 
 #customers-text-part {
@@ -452,13 +444,12 @@ body {
     width: 55%;
 }
 
-#customers-text-part h2 {
+.title-part {
     font-size: 3.0em;
     line-height: 1.31em;
-    font-family: "open sans";
 }
 
-#customers-text-part p {
+.text-part {
     font-size: 1.4em;
     padding: 10px 0 18px 0;
     line-height: 1.6em;
@@ -499,4 +490,43 @@ body {
     object-fit: contain;
     height: 45.64px;
     line-height: 45.64px;
+}
+
+#content {
+    padding: 100px 0 ;
+}
+#content-text-part {
+    float: left;
+    width: 45%;
+    padding: 30px 0;
+}
+
+#content-image-part {
+    float: left;
+    width: 55%;
+    text-align: right;
+}
+
+#content .title-part {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#content .text-part {
+    font-size: 1.2em;
+    padding: 30px 0;
+}
+
+#content .special-button {
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#content-text-part p:nth-of-type(2) {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+#content-image-part img {
+    width: 60%;
 }
