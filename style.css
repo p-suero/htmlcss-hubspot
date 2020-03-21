@@ -636,6 +636,12 @@ footer #logo-icon li {
     font-size: 20px;
 }
 
+#footer-list a:not(.footer-special-button):hover, #footer-languages a:hover {
+    color: #0091ae;
+    transition: all .2s ease-in-out;
+}
+
+
 #footer-languages {
     padding: 2rem 0;
     text-align: center;
@@ -652,6 +658,7 @@ footer #logo-icon li {
     padding: 0.5rem 1rem;
     font-weight: 700;
 }
+
 
 #footer-bottom-left {
     float: left;
