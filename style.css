@@ -93,7 +93,7 @@ body {
     display: inline-block;
 }
 
-/* selettore che permette di stilare pulsanti ripetuti più volte nella pagina*/
+/* selettore che permette di stilare pulsanti ripetuti più volte nella pagina */
 .special-button {
     background-color: #ff7a59;
     color: #fff;
@@ -104,6 +104,7 @@ body {
     display: inline-block;
 }
 
+/* selettore che permette di assegnare un colore ai button in hover */
 .btn:hover, .special-button:hover {
     opacity: 0.5;
     transition: all .5s ease-in-out;
@@ -220,7 +221,7 @@ body {
     background-color: white;
 }
 
-/* selettore che permette di stilare i box nella sezione feature*/
+/* selettore che permette di stilare i box nella sezione feature */
 .box {
     padding: 2rem;
     border-radius: 3px;
@@ -229,6 +230,7 @@ body {
     width: 100%;
 }
 
+/* selettore che permette di dare uno zoom ai box in hover */
 .box:hover {
     transform:scale(1.1,1.1);
     transition: all .5s ease-in-out;
@@ -297,7 +299,7 @@ body {
     font-weight: 500;
 }
 
-/*stile lista nella sezione features*/
+/* stile lista nella sezione features */
 .list-style {
     font-size: 1.2em;
     color: #ff7a59;
@@ -643,11 +645,11 @@ footer #logo-icon li {
     font-size: 20px;
 }
 
-#footer-list a:not(.footer-special-button):hover, #footer-languages a:hover {
+/* hover che permette di cambiare colore ad alcuni elementi posti nella sezione footer */
+#footer-list a:not(.footer-special-button):hover, #footer-languages a:hover, #footer-bottom-right a:hover {
     color: #0091ae;
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in-out;
 }
-
 
 #footer-languages {
     padding: 2rem 0;
