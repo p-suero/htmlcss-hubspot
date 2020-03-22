@@ -159,36 +159,36 @@ body {
     background-position: center;
 }
 
-.jumbo-contain {
+#jumbo-contain {
     width: 35%;
-    padding-top: 80px;
-    padding-bottom: 260px;
+    padding: 100px 0 200px 0;
 }
 
-.jumbo-contain h1 {
+/* i successivi quattro selettori permettono di stilare i blocchi con titolo, paragrafo, button e sottotitolo posti sulla sinistra */
+.text-block-style h1, .text-block-style h2 {
     font-weight: 800;
     font-size: 2.5em;
 }
 
-.jumbo-contain p:nth-child(2) {
-    font-size: 1em;
+.text-block-style p:first-of-type {
+    font-size: 1.12rem;
     font-weight: lighter;
     padding-top: 1.3em;
     padding-bottom: 30px;
-    line-height: 1.83em;
+    line-height: 1.7em;
     opacity: 0.9;
 }
 
-.jumbo-contain a {
-    text-decoration: none;
-    padding: 2em;
-}
-
-.jumbo-contain p:nth-child(4) {
+.text-block-style p:nth-of-type(2) {
     font-weight: 200;
     font-size: 0.9rem;
     padding-top: 30px;
     line-height: 22px;
+}
+
+.text-block-style .special-button {
+    text-decoration: none;
+    padding: 2em;
 }
 
 #features {
@@ -453,13 +453,13 @@ body {
     width: 55%;
 }
 
-/* i successivi due selettori permettono di stilare il testo e titolo della sezione customers e content */
-.title-part {
+#customers-text-part h2 {
     font-size: 3.0em;
     line-height: 1.31em;
+    font-family: "open sans";
 }
 
-.text-part {
+#customers-text-part p {
     font-size: 1.4em;
     padding: 10px 0 18px 0;
     line-height: 1.6em;
@@ -505,6 +505,7 @@ body {
 #content {
     padding: 70px 0 120px 0;
 }
+
 #content-text-part {
     float: left;
     width: 45%;
@@ -517,24 +518,12 @@ body {
     text-align: right;
 }
 
-#content .title-part {
+#content-text-part.text-block-style h2 {
     font-size: 2em;
-    font-weight: 700;
 }
 
-#content .text-part {
-    font-size: 1.2em;
-    padding: 30px 0;
-}
-
-#content .special-button {
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-#content-text-part p:nth-of-type(2) {
-    font-size: 0.9em;
-    opacity: 0.9;
+#content-text-part.text-block-style p:first-of-type {
+    font-size: 1.1em;
 }
 
 #content-image-part img {
@@ -622,7 +611,7 @@ footer li a {
     color: white;
 }
 
-li .footer-special-button {
+.footer-special-button {
     background-color: white;
     color: #33475B;
     width: 100%;
@@ -636,12 +625,12 @@ li .footer-special-button {
     font-weight: 100;
 }
 
-footer #logo-icon li {
+footer #social-logo li {
     display: inline-block;
     padding: 20px 20px 0 0;
 }
 
-#logo-icon i {
+#social-logo i {
     font-size: 20px;
 }
 
@@ -674,7 +663,7 @@ footer #logo-icon li {
     width: 50%;
 }
 
-#footer-bottom-left p{
+#footer-bottom-left p {
     font-size: 0.9em;
     padding-top: 15px;
 }
