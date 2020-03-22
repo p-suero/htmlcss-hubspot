@@ -1,9 +1,12 @@
+/* i selettori sono inseriti nel foglio css secondo l'ordine della pagina html */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* assegnate delle regole generiche al body */
 body {
     font-family: "Arial";
     color: #33475B;
@@ -90,6 +93,7 @@ body {
     display: inline-block;
 }
 
+/* selettore che permette di stilare pulsanti ripetuti più volte nella pagina*/
 .special-button {
     background-color: #ff7a59;
     color: #fff;
@@ -161,7 +165,7 @@ body {
 }
 
 .jumbo-contain h1 {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 2.5em;
 }
 
@@ -216,6 +220,7 @@ body {
     background-color: white;
 }
 
+/* selettore che permette di stilare i box nella sezione feature*/
 .box {
     padding: 2rem;
     border-radius: 3px;
@@ -292,6 +297,7 @@ body {
     font-weight: 500;
 }
 
+/*stile lista nella sezione features*/
 .list-style {
     font-size: 1.2em;
     color: #ff7a59;
@@ -445,6 +451,7 @@ body {
     width: 55%;
 }
 
+/* i successivi due selettori permettono di stilare il testo e titolo della sezione customers e content */
 .title-part {
     font-size: 3.0em;
     line-height: 1.31em;
