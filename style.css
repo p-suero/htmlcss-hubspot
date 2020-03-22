@@ -522,10 +522,6 @@ body {
     font-size: 2em;
 }
 
-#content-text-part.text-block-style p:first-of-type {
-    font-size: 1.1em;
-}
-
 #content-image-part img {
     width: 60%;
 }
