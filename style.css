@@ -318,22 +318,18 @@ body {
     margin-top: 50px;
 }
 
-#features-bottom-left {
+#features-bottom .box {
     width: 30%;
     float: left;
     margin-right: 2.5%;
 }
 
-#features-bottom-middle {
-    width: 30%;
-    float: left;
+#features-bottom .box:nth-of-type(2) {
     margin: 0 2.5%;
 }
 
-#features-bottom-right {
-    width: 30%;
-    float: left;
-    margin-left: 2.5%;
+#features-bottom .box:nth-of-type(3) {
+    margin:0 0 0 2.5%;
 }
 
 #features-bottom h4 + p {
@@ -387,7 +383,7 @@ body {
     border-bottom: 1px solid white;
 }
 
-.first-grid-unit {
+.grid-unit {
     float: left;
     width: 25%;
     border-right: 1px solid white;
@@ -395,27 +391,8 @@ body {
     padding: 30px;
 }
 
-.second-grid-unit {
-    float: left;
-    width: 25%;
-    border-right: 1px solid white;
-    text-align: center;
-    padding: 30px;
-}
-
-.third-grid-unit {
-    float: left;
-    width: 25%;
-    border-right: 1px solid white;
-    text-align: center;
-    padding: 30px;
-}
-
-.fourth-grid-unit {
-    float: left;
-    width: 25%;
-    text-align: center;
-    padding: 30px;
+#community-top-grid .grid-unit:nth-child(4), #community-bottom-grid .grid-unit:nth-child(4) {
+    border-right: 0;
 }
 
 .grid-text h2 {
@@ -471,25 +448,7 @@ body {
     font-weight: 600;
 }
 
-.customers-first-grid-unit {
-    float: left;
-    width: 25%;
-    padding: 20px;
-}
-
-.customers-second-grid-unit {
-    float: left;
-    width: 25%;
-    padding: 20px;
-}
-
-.customers-third-grid-unit {
-    float: left;
-    width: 25%;
-    padding: 20px;
-}
-
-.customers-fourth-grid-unit {
+.customers-grid-unit {
     float: left;
     width: 25%;
     padding: 20px;
@@ -548,7 +507,7 @@ footer {
     color: #cbd6e2;
 }
 
-#first-footer-list {
+.footer-list {
     width: 25%;
     float: left;
     font-size: 0.950rem;
@@ -557,34 +516,7 @@ footer {
     padding: 0 1rem 0 0;
 }
 
-#second-footer-list {
-    width: 25%;
-    float: left;
-    font-size: 0.950rem;
-    font-weight: 700;
-    line-height: 2.8em;
-    padding: 0 1rem 0 0;
-}
-
-#third-footer-list {
-    width: 25%;
-    float: left;
-    font-size: 0.950rem;
-    font-weight: 700;
-    line-height: 2.8em;
-    padding: 0 1rem 0 0;
-}
-
-#fourth-footer-list {
-    width: 25%;
-    float: left;
-    font-size: 0.950rem;
-    font-weight: 700;
-    line-height: 2.8em;
-    padding: 0 1rem 0 0;
-}
-
-#footer-list h3 {
+.footer-list h3 {
     color: white;
     font-size: 1.2em;
 }
@@ -598,12 +530,12 @@ footer li a {
     color: inherit;
 }
 
-#fourth-footer-list > ul:nth-of-type(1) > li:nth-child(5) a {
+#footer-title-sub-list {
     color: white;
     font-weight: 100;
 }
 
-#fourth-footer-list li:nth-child(5) span i {
+#footer-title-sub-list span i {
     color: white;
 }
 
@@ -631,7 +563,7 @@ footer #social-logo li {
 }
 
 /* hover che permette di cambiare colore ad alcuni elementi posti nella sezione footer */
-#footer-list a:not(.footer-special-button):hover, #footer-languages a:hover, #footer-bottom-right a:hover {
+#footer-top a:not(.footer-special-button):not(#footer-title-sub-list):hover, #footer-languages a:hover, #footer-bottom-right a:hover {
     color: #0091ae;
     transition: all .1s ease-in-out;
 }
