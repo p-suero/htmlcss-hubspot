@@ -218,7 +218,6 @@ body {
 #features-top-right {
     width: 65%;
     float: right;
-    background-color: white;
 }
 
 /* selettore che permette di stilare i box nella sezione feature */
@@ -226,8 +225,6 @@ body {
     padding: 2rem;
     border-radius: 3px;
     background-color: white;
-    height: 100%;
-    width: 100%;
 }
 
 /* selettore che permette di dare uno zoom ai box in hover */
@@ -584,7 +581,6 @@ footer #social-logo li {
     padding: 0.5rem 1rem;
     font-weight: 700;
 }
-
 
 #footer-bottom-left {
     float: left;
