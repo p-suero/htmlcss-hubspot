@@ -11,94 +11,23 @@ body {
     color: #33475B;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* SELETTORI HEADER */
-#header-top {
-    height: 90px;
-    background-color: #F5F8FA;
-    border-bottom: 1px solid #cbd6e2;
-    position: fixed;
-    z-index: 3;
-    width: 100%;
-}
-
+/* SELETTORI COMUNI A PIU' SEZIONI */
 .container {
     width: 1080px;
     height: 100%;
     margin: auto;
 }
 
-#header-top-left {
-    width: 30%;
-    float: left;
-    line-height: 90px;
-}
-
-#header-top-right {
-    width: 70%;
-    float: right;
-    text-align: right;
-}
-
-#header-top-left li {
-    display: inline-block;
-    line-height: 30px;
-    height: 30px;
-    padding-right: 15px;
-}
-
-#header-top-left li:first-child {
-    border-right: 2px solid #cbd6e2;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .angle-down-icon {
     padding: 0 0 0 7px;
     color: #7C98B6;
     font-size: 22px;
-}
-
-#header-top-left li:nth-child(2) {
-    padding-left: 10px;
-}
-
-#header-top-left li a {
-    text-decoration: none;
-    font-weight: 500;
-    color: inherit;
-}
-
-#header-top-right li {
-    display: inline-block;
-}
-
-#header-top-right a {
-    text-decoration: none;
-}
-
-.search-button {
-    color: #00A4BD;
-    margin-right: 20px;
-    padding: 0 10px;
-    font-size: 20px;
-    font-weight: 500;
-    display: inline-block;
-    line-height: 90px;
-}
-
-.btn {
-    border: 1px solid #ff7a59;
-    color: #ff7a59;
-    font-size: 1rem;
-    font-weight: 300;
-    background-color: white;
-    padding: 0.9em 20px 0.6em;
-    border-radius: 5px;
-    display: inline-block;
 }
 
 .special-button {
@@ -114,57 +43,6 @@ body {
 .btn:hover, .special-button:hover {
     opacity: 0.5;
     transition: all .5s ease-in-out;
-}
-
-#header-bottom {
-    padding-top: 90px;
-    height: 90px;
-    width: 100%;
-    background-color: white;
-    box-sizing: content-box;
-}
-
-#logo-container {
-    width: 30%;
-    float: left;
-}
-
-#logo-container a {
-    display: inline-block;
-    margin: 28px 0;
-}
-
-#main-nav {
-    width: 70%;
-    float:right;
-    text-align: right;
-}
-
-#main-nav li {
-    display: inline-block;
-    height: 90px;
-    line-height: 90px;
-    padding: 0 18px;
-    list-style-type: none;
-}
-
-#main-nav a {
-    text-decoration: none;
-    color: #39475B;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-/* SELETTORI JUMBOTRON */
-.jumbotron {
-    background-image: url(img/jumbo-background.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.jumbo-contain {
-    width: 35%;
-    padding: 100px 0 200px 0;
 }
 
 .text-block-style h1, .text-block-style h2 {
@@ -191,6 +69,129 @@ body {
 .text-block-style .special-button {
     text-decoration: none;
     padding: 2em;
+}
+
+/* SELETTORI HEADER */
+#header-top {
+    height: 90px;
+    background-color: #F5F8FA;
+    border-bottom: 1px solid #cbd6e2;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+
+#header-top-left {
+    width: 30%;
+    float: left;
+    line-height: 90px;
+}
+
+#header-top-right {
+    width: 70%;
+    float: right;
+    text-align: right;
+}
+
+#header-top-left li {
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    padding-right: 15px;
+}
+
+#header-top-left li:first-child {
+    border-right: 2px solid #cbd6e2;
+}
+
+#header-top-left li:nth-child(2) {
+    padding-left: 10px;
+}
+
+#header-top-left li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit;
+}
+
+#header-top-right li {
+    display: inline-block;
+}
+
+#header-top-right a {
+    text-decoration: none;
+}
+
+#header-top-right .search-button {
+    color: #00A4BD;
+    margin-right: 20px;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    line-height: 90px;
+}
+
+#header-top-right .btn {
+    border: 1px solid #ff7a59;
+    color: #ff7a59;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: white;
+    padding: 0.9em 20px 0.6em;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#header-bottom {
+    padding-top: 90px;
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    box-sizing: content-box;
+}
+
+#header-bottom .logo-container {
+    width: 30%;
+    float: left;
+}
+
+#header-bottom .logo-container a {
+    display: inline-block;
+    margin: 28px 0;
+}
+
+#header-bottom .main-nav {
+    width: 70%;
+    float:right;
+    text-align: right;
+}
+
+#header-bottom .main-nav li {
+    display: inline-block;
+    height: 90px;
+    line-height: 90px;
+    padding: 0 18px;
+    list-style-type: none;
+}
+
+#header-bottom .main-nav a {
+    text-decoration: none;
+    color: #39475B;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* SELETTORI JUMBOTRON */
+.jumbotron {
+    background-image: url(img/jumbo-background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbo-contain {
+    width: 35%;
+    padding: 100px 0 200px 0;
 }
 
 /* SELETTORI FEATURES */
@@ -223,22 +224,22 @@ body {
     float: right;
 }
 
-.box {
+#features .box {
     padding: 2rem;
     border-radius: 3px;
     background-color: white;
 }
 
-.box:hover {
+#features .box:hover {
     transform:scale(1.1,1.1);
     transition: all .5s ease-in-out;
 }
 
-.box-top-part {
+#features .box-top-part {
     height: 60%;
 }
 
-.box-first-icon {
+#features .box-first-icon {
     width: auto;
     height: auto;
     display: inline-block;
@@ -246,7 +247,7 @@ body {
     vertical-align: middle;
 }
 
-.box-title {
+#features .box-title {
     font-size: 1.222rem;
     font-weight: 600;
     display: inline-block;
@@ -254,7 +255,7 @@ body {
     color: #46596B;
 }
 
-.box-description {
+#features .box-description {
     font-size: 15px;
     padding-top: 20px;
     padding-bottom: 18px;
@@ -262,12 +263,12 @@ body {
     color: #97A1AB;
 }
 
-.box-bottom-part {
+#features .box-bottom-part {
     height: 40%;
     position: relative;
 }
 
-.popular-features {
+#features .popular-features {
     text-transform: uppercase;
     padding-top: 15px;
     color: #3D5063;
@@ -556,7 +557,7 @@ footer li a {
     font-weight: 100;
 }
 
-footer #social-logo li {
+#social-logo li {
     display: inline-block;
     padding: 20px 20px 0 0;
 }
