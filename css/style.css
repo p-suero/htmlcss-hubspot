@@ -184,7 +184,7 @@ body {
 
 /* SELETTORI JUMBOTRON */
 .jumbotron {
-    background-image: url(img/jumbo-background.png);
+    background-image: url(../img/jumbo-background.png);
     background-size: cover;
     background-position: center;
 }
