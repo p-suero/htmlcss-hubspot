@@ -6,12 +6,18 @@
     box-sizing: border-box;
 }
 
-/* assegnate delle regole generiche al body */
 body {
     font-family: "Arial";
     color: #33475B;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* SELETTORI HEADER */
 #header-top {
     height: 90px;
     background-color: #F5F8FA;
@@ -25,12 +31,6 @@ body {
     width: 1080px;
     height: 100%;
     margin: auto;
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 #header-top-left {
@@ -56,6 +56,12 @@ body {
     border-right: 2px solid #cbd6e2;
 }
 
+.angle-down-icon {
+    padding: 0 0 0 7px;
+    color: #7C98B6;
+    font-size: 22px;
+}
+
 #header-top-left li:nth-child(2) {
     padding-left: 10px;
 }
@@ -66,13 +72,15 @@ body {
     color: inherit;
 }
 
-.angle-down-icon {
-    padding: 0 0 0 7px;
-    color: #7C98B6;
-    font-size: 22px;
+#header-top-right li {
+    display: inline-block;
 }
 
-#search-button {
+#header-top-right a {
+    text-decoration: none;
+}
+
+.search-button {
     color: #00A4BD;
     margin-right: 20px;
     padding: 0 10px;
@@ -93,7 +101,6 @@ body {
     display: inline-block;
 }
 
-/* selettore che permette di stilare pulsanti ripetuti più volte nella pagina */
 .special-button {
     background-color: #ff7a59;
     color: #fff;
@@ -104,14 +111,9 @@ body {
     display: inline-block;
 }
 
-/* selettore che permette di assegnare un colore ai button in hover */
 .btn:hover, .special-button:hover {
     opacity: 0.5;
     transition: all .5s ease-in-out;
-}
-
-#header-top-right a {
-    text-decoration: none;
 }
 
 #header-bottom {
@@ -132,13 +134,13 @@ body {
     margin: 28px 0;
 }
 
-#menu-container {
+#main-nav {
     width: 70%;
     float:right;
     text-align: right;
 }
 
-#menu-container li {
+#main-nav li {
     display: inline-block;
     height: 90px;
     line-height: 90px;
@@ -146,25 +148,25 @@ body {
     list-style-type: none;
 }
 
-#menu-container a {
+#main-nav a {
     text-decoration: none;
     color: #39475B;
     font-weight: 600;
     font-size: 16px;
 }
 
-#jumbotron {
+/* SELETTORI JUMBOTRON */
+.jumbotron {
     background-image: url(img/jumbo-background.png);
     background-size: cover;
     background-position: center;
 }
 
-#jumbo-contain {
+.jumbo-contain {
     width: 35%;
     padding: 100px 0 200px 0;
 }
 
-/* i successivi quattro selettori permettono di stilare i blocchi con titolo, paragrafo, button e sottotitolo posti sulla sinistra */
 .text-block-style h1, .text-block-style h2 {
     font-weight: 800;
     font-size: 2.5em;
@@ -191,6 +193,7 @@ body {
     padding: 2em;
 }
 
+/* SELETTORI FEATURES */
 #features {
     background-color: #F5F8FA;
     padding: 100px 0 100px 0;
@@ -220,14 +223,12 @@ body {
     float: right;
 }
 
-/* selettore che permette di stilare i box nella sezione feature */
 .box {
     padding: 2rem;
     border-radius: 3px;
     background-color: white;
 }
 
-/* selettore che permette di dare uno zoom ai box in hover */
 .box:hover {
     transform:scale(1.1,1.1);
     transition: all .5s ease-in-out;
@@ -296,7 +297,6 @@ body {
     font-weight: 500;
 }
 
-/* stile lista nella sezione features */
 .list-style {
     font-size: 1.2em;
     color: #ff7a59;
@@ -344,6 +344,7 @@ body {
     margin-top: 30px;
 }
 
+/* SELETTORI COMMUNITY */
 #community {
     width: 100%;
     background: rgb(0,164,189);
@@ -388,7 +389,8 @@ body {
     padding: 30px;
 }
 
-#community-top-grid .grid-unit:nth-child(4), #community-bottom-grid .grid-unit:nth-child(4) {
+#community-top-grid .grid-unit:nth-child(4),
+#community-bottom-grid .grid-unit:nth-child(4) {
     border-right: 0;
 }
 
@@ -413,6 +415,7 @@ body {
     font-weight: 500;
 }
 
+/* SELETTORI CUSTOMERS */
 #customers {
     padding: 100px 0 100px 0;
 }
@@ -458,6 +461,7 @@ body {
     line-height: 45.64px;
 }
 
+/* SELETTORI CONTENT */
 #content {
     padding: 70px 0 120px 0;
 }
@@ -482,6 +486,7 @@ body {
     width: 60%;
 }
 
+/* SELETTORI PER L'ICONA "MESSAGGIO" IN POSITION FIXED */
 #chat-button-contain {
     background-color: rgb(66, 91, 118);
     border-radius: 50%;
@@ -498,6 +503,7 @@ body {
     padding: 15px 0;
 }
 
+/* SELETTORI FOOTER */
 footer {
     background-color: #33475b;
     padding: 90px 0 60px 0;
@@ -559,7 +565,6 @@ footer #social-logo li {
     font-size: 20px;
 }
 
-/* hover che permette di cambiare colore ad alcuni elementi posti nella sezione footer */
 #footer-top a:not(.footer-special-button):not(#footer-title-sub-list):hover, #footer-languages a:hover, #footer-bottom-right a:hover {
     color: #0091ae;
     transition: all .1s ease-in-out;
